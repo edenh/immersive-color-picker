@@ -1,0 +1,62 @@
+#sidebar,
+#map { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#sidebar {
+  width: 200px;
+  z-index: 4;
+}
+
+#map { right: 0; }
+
+.layers li { 
+  cursor: pointer;
+  color: rgba(255,255,255,0.6); 
+}
+.layers li:hover { 
+  background: rgba(0,0,0,0.05);
+  color: rgba(255,255,255,0.8); 
+}
+.layers li.active { 
+  background: rgba(0,0,0,0.3); 
+  color: rgba(255,255,255,1);
+}
+
+.swatch {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0);
+}
+
+.layers li.active .swatch { box-shadow: 0 0 0 1px rgba(255,255,255,1); }
+
+.axis .tick { font-size: 9px; }
+.axis.hue .tick:first-child { display: none; }
+.axis .label { 
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+.axis.hue .domain { fill: url('#hue-gradient'); }
+.axis.luminosity .domain { fill: url('#luminosity-gradient'); }
+.axis .slider {
+  stroke: rgba(0,0,0,0.3);
+  stroke-width: 1px;
+  fill: #fff;
+}
+
+#helper {
+  position: absolute;
+  opacity: 0;
+  text-align: right;
+  bottom: 30px;
+  right: 30px;
+}

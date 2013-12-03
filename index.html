@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta charset=utf-8 />
+  <title>Immersive Color Picker</title>
+  <link rel='shortcut icon' href='path/to/favicon.ico' type='image/x-icon' />
+  <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+  <link href='css/style.css' rel='stylesheet' />
+</head>
+<body>
+  <div class='container'>
+    <div id='sidebar' class='fill-darken3 dark pad2y'>
+      <ul class='layers'>
+        <li class='pad1y pad4x contain'>
+          <span href='#' class='swatch dot inline animate' data-color='hsl(81, 51%, 65%)'></span> Land
+        </li>
+        <li class='pad1y pad4x contain'>
+          <span href='#' class='swatch dot inline animate' data-color='hsl(205, 54%, 48%)'></span> Water
+        </li>
+        <li class='pad1y pad4x contain'>
+          <span href='#' class='swatch dot inline animate' data-color='hsl(60, 82%, 70%)'></span> Buildings
+        </li>
+        <li class='pad1y pad4x contain'>
+          <span href='#' class='swatch dot inline animate' data-color='hsl(240, 38%, 67%)'></span> Lakes
+        </li>
+        <li class='pad1y pad4x contain'>
+          <span href='#' class='swatch dot inline animate' data-color='hsl(198, 72%, 74%)'></span> Airports
+        </li>
+        <li class='pad1y pad4x contain'>
+          <span href='#' class='swatch dot inline animate' data-color='hsl(40, 49%, 33%)'></span> Bridges
+        </li>
+      </ul>
+    </div>
+    <div id='map' class='fill-white contain'>
+      <div id='helper'>
+        <h2></h2>
+        <small class='quiet'><span class='strong'>Click to save</span>, press ESC to cancel. Use mousewheel for saturation.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src='http://d3js.org/d3.v3.min.js' charset='utf-8'></script>
+  <script src='js/color.js'></script>
+</body>
+</html>
